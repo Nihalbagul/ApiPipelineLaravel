@@ -9,7 +9,10 @@ use Illuminate\Support\Facades\Log;
 abstract class BaseAction implements ActionInterface
 {
     use JsonDecoder;
+  
 
+    // Define the prepareRequest method
+   
     protected $client;
 
     public function __construct()
